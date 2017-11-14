@@ -115,7 +115,8 @@ img.logo {
   margin: 0 auto;
 }
 
-.field input{
+.field input, 
+input.field{
   border-radius: 5px;
   background: #fff;
   border-top: none;
@@ -132,7 +133,7 @@ img.logo {
 .submit{
   width: 20%;
   float: left;
-  margin-left: -17%;
+  margin-left: -21%;
   outline: none;
 }
 
