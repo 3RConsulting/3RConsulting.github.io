@@ -234,6 +234,10 @@ header p.sub-heading {
   margin-top: 35px;
 }
 
+/* legal */
+.legal .btn {
+  margin-top: 20px;
+}
 /* pages */
 
 .intro-pages {

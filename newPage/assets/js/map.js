@@ -2,13 +2,13 @@ google.maps.event.addDomListener(window, 'load', init);
     var map;
     function init() {
         var mapOptions = {
-            center: new google.maps.LatLng(40.764145,-73.972272),
+            center: new google.maps.LatLng(38.7300372,-9.1485513),
             zoom: 16,
-            zoomControl: false,
+            zoomControl: true,
             disableDoubleClickZoom: false,
             mapTypeControl: false,
             scaleControl: false,
-            scrollwheel: false,
+            scrollwheel: true,
             panControl: false,
             streetViewControl: false,
             draggable : true,
@@ -22,7 +22,7 @@ google.maps.event.addDomListener(window, 'load', init);
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-['office', 'undefined', 'undefined', 'undefined', 'undefined', 40.7635371, -73.97224779999999, 'https://mapbuildr.com/assets/img/markers/ellipse-blue.png']
+          ['3R Consulting', 'undefined', '217 808 520', 'geral@3rconsulting.pt', 'undefined', 38.7300372,-9.1485513, 'https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi_hdpi.png']
         ];
         for (i = 0; i < locations.length; i++) {
 			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
