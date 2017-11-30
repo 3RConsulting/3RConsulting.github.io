@@ -77,12 +77,21 @@ p {
 }
 
 .justify {
-  text-align: justify;
+  text-align: justify !important; 
 }
 
 /**********************************
  02. Generic styles
 **********************************/
+div.flex {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 1023px) {
+  div.flex {
+    display: block;
+  }
+}
 hr.line {
   border-top: 1px solid black;
   width: 90%;
@@ -1029,19 +1038,32 @@ footer li {
   text-align: center;
   padding-bottom: 65px;
 }
-
+.services-item.big{
+  padding-bottom: 15px;
+}
 .services-item i {
   font-size: 70px;
   color: #c1cedc;
 }
-
+.services-item.big i {
+  font-size: 100px;
+}
 .services-item h4 {
   margin-top: 26px;
   margin-bottom: 24px;
+  height: 48px;
 }
 
 .services-item p {
   color: #2e363a;
+  height: 130px;
+}
+
+@media only screen and (max-width: 768px) {
+  .services-item p,
+  .services-item h4 {
+    height: initial;
+  }
 }
 
 /* services 2 */
