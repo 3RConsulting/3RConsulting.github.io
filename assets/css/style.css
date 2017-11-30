@@ -1033,7 +1033,9 @@ footer li {
 .services-list.empresas {
   padding-bottom: 0px;
 }
-
+.services-list .services-item p {
+  height: 130px;
+}
 .services-item {
   text-align: center;
   padding-bottom: 65px;
@@ -1056,12 +1058,11 @@ footer li {
 
 .services-item p {
   color: #2e363a;
-  height: 130px;
 }
 
 @media only screen and (max-width: 768px) {
-  .services-item p,
-  .services-item h4 {
+  .services-list .services-item p,
+  .services-list .services-item h4 {
     height: initial;
   }
 }
