@@ -102,3 +102,13 @@ var swiper = new Swiper('.swiper-container', {
   parallax: true,
   speed: 600,
 });
+
+// ---------- email code --------------
+function sendmail() {
+  var subject = $("#emailSubject").val()
+  var body = $("#emailBody").val()
+  var link = "mailto:geral@3rconsulting.pt"
+  + "?subject=" + subject
+  + "&body=" + body;
+  window.location.href = link;
+}

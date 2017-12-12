@@ -79,6 +79,9 @@ p {
 .justify {
   text-align: justify !important; 
 }
+.center {
+  text-align: center !important; 
+}
 
 /**********************************
  02. Generic styles
@@ -1396,8 +1399,8 @@ p.contact-info-title {
   height: 50px;
 }
 
-.form-group {
-  margin-bottom: 30px;
+.form-group-2 {
+  margin-bottom: 15px;
 }
 
 /* contact 2 */

@@ -114,58 +114,77 @@
 
             <div class="col-md-8 col-md-offset-2">
 
+              <h3 class="center">Lisboa</h3>
               <ul class="contact-info list-unstyled list-inline">
-
                 <li class="match-height">
                   <p class="contact-info-title">Telefone</p>
                   <p>217 808 520</p>
                 </li>
-
                 <li class="match-height">
                   <p class="contact-info-title">Morada</p>
                   <p>Rua Viriato n.7, 8º Andar<br />
                     Lisboa, 1050-233</p>
                 </li>
-
                 <li class="match-height">
                   <p class="contact-info-title">Email</p>
                   <p>geral@3rconsulting.pt</p>
                 </li>
               </ul> <!-- /.contact-info -->
 
-              <form id="contactForm" data-toggle="validator" class="shake">
+              <h3 class="center">Porto</h3>
+              <ul class="contact-info list-unstyled list-inline">
+                <li class="match-height">
+                  <p class="contact-info-title">Telefone</p>
+                  <p>217 808 520</p>
+                </li>
+                <li class="match-height">
+                  <p class="contact-info-title">Morada</p>
+                  <p>Rua da Cruz n.112, Loja<br />
+                    Porto, 4200-246</p>
+                </li>
+                <li class="match-height">
+                  <p class="contact-info-title">Email</p>
+                  <p>geral@3rconsulting.pt</p>
+                </li>
+              </ul> <!-- /.contact-info -->
 
+              <h3 class="center">Coimbra</h3>
+              <ul class="contact-info list-unstyled list-inline">
+                <li class="match-height">
+                  <p class="contact-info-title">Telefone</p>
+                  <p>217 808 520</p>
+                </li>
+                <li class="match-height">
+                  <p class="contact-info-title">Morada</p>
+                  <p>Rua Simões de Castro n.164, 1ºE, Sala 2<br />
+                    Coimbra, 3000-387</p>
+                </li>
+                <li class="match-height">
+                  <p class="contact-info-title">Email</p>
+                  <p>geral@3rconsulting.pt</p>
+                </li>
+              </ul> <!-- /.contact-info -->
+
+              <form>
                 <div class="form-group">
-                  <input type="text" class="form-control" id="name" placeholder="Your name" required data-error="Name missing">
-                  <div class="help-block with-errors"></div>
+                  <input type="text" class="form-control" placeholder="Escolherá o seu email ao confirmar a mensagem..." disabled>
                 </div>
-
                 <div class="form-group">
-                  <input type="email" class="form-control" id="email" placeholder="Your email" required>
-                  <div class="help-block with-errors"></div>
+                  <input id="emailSubject" type="text" class="form-control" value="Avaliação gratuita">
                 </div>
-
-                <div class="form-group">
-                  <textarea id="message" class="form-control" rows="6" placeholder="Write your message here" required></textarea>
-                  <div class="help-block with-errors"></div>
+                <div class="form-group-2">
+                  <textarea id="emailBody" class="form-control required" rows="4" placeholder="A sua mensagem"></textarea>
                 </div>
-
-                <div class="float-left">
-                  <button type="submit" id="form-submit" class="btn btn-contact ">Send</button>
-                </div>
-                <div id="msgSubmit" class="h3 text-center hidden"></div>
-
+                <button id="sendMail" class="btn btn-contact" onclick="sendmail(); return false;">Enviar Mensagem</button>
               </form>
-
             </div> <!--/.col-md-6 -->
-
           </div> <!-- /.row -->
         </div> <!-- /.container -->
       </div> <!-- /.contact-main -->
 
       <!-- Google maps -->
       <div id="map"></div>
-      <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
+      <script src='https://maps.googleapis.com/maps/api/js?extension=.js'></script>
       <script src="assets/js/map.js"></script>
 
       <footer>
