@@ -1035,8 +1035,20 @@ footer li {
 
 .services-list.particulares {
   padding-top: 30px;
+  padding-bottom: 55px;
 }
-
+.particulares header {
+  margin-bottom: 50px;
+}
+.particulares .services-item h4 {
+  height: initial;
+}
+.particulares .services-item {
+  padding-bottom: 0;
+}
+.particulares .services-item a {
+  margin-top: 10px;
+}
 .services-list.empresas {
   padding-bottom: 0px;
 }
