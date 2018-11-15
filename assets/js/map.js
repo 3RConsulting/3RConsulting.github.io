@@ -2,7 +2,7 @@ google.maps.event.addDomListener(window, 'load', init);
     var map;
     function init() {
         var mapOptions = {
-            center: new google.maps.LatLng(38.7300372,-9.1485513),
+            center: new google.maps.LatLng(38.7556841,-9.1005611,17),
             zoom: 16,
             zoomControl: true,
             disableDoubleClickZoom: false,
@@ -22,7 +22,7 @@ google.maps.event.addDomListener(window, 'load', init);
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-          ['3R Consulting', 'undefined', '217 808 520', 'geral@3rconsulting.pt', 'undefined', 38.7300372,-9.1485513, 'https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi_hdpi.png']
+          ['3R Consulting', 'undefined', '217 808 520', 'geral@3rconsulting.pt', 'undefined', 38.7556841,-9.1005611,17 'https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi_hdpi.png']
         ];
         for (i = 0; i < locations.length; i++) {
 			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
