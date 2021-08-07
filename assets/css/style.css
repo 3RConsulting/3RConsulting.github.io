@@ -385,7 +385,7 @@ header p.sub-heading {
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.4);
   border: none;
   border-radius: 0;
   transition: all ease-in-out 300ms;
